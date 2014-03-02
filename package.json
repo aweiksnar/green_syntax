@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "private": true,
   "description": "atom.io syntax highlighting inspired by the node js website",
-  "repository": "https://github.com/atom/green-syntax",
+  "repository": "https://github.com/atom/green_syntax",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
