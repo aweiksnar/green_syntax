@@ -1,0 +1,238 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/stylesheets/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+@import "colors";
+
+.editor-colors {
+  background-color: @brown;
+  color: @dusty-grey;
+  .html {
+    color: @dusty-grey;
+    &.string {
+      color: @white-yellow;
+    }
+  }
+}
+
+.editor {
+  .invisible-character,
+  .indent-guide {
+    color: @black;
+  }
+
+  .gutter {
+    background-color: @brown;
+  }
+
+  .gutter .line-number {
+    opacity: 1;
+    color: @dark-grey;
+  }
+
+  .gutter .line-number.folded,
+  .gutter .line-number:after,
+  .fold-marker:after {
+    color: @magenta;
+  }
+
+  .cursor.idle {
+    border-color: @orangered;
+    visibility: visible;
+  }
+
+  .cursor.blink-off {
+    border-color: @green;
+    visibility: visible;
+  }
+
+  .selection .region {
+    background-color: @black;
+    color: @base03;
+  }
+
+  .line-number.cursor-line-no-selection {
+    background-color: @dark-grey;
+  }
+}
+
+.bracket-matcher {
+  background-color: @orangered;
+  opacity: 0.6;
+}
+
+.comment {
+  color: @base01;
+  font-style: italic;
+}
+
+.entity {
+// classnames
+  color: @bright-green;
+
+// function names
+  &.name.function {
+    color: @bright-green;
+  }
+
+// html tag names
+  &.tag {
+    color: @medium-green
+  }
+// html attrs
+  &.attribute-name {
+    color: @white
+  }
+
+}
+
+// stylus variable defs
+.keyword {
+  color: @medium-green;
+  &.operator {
+    color: @white;
+  }
+}
+
+.storage {
+  &.type {
+    color: @white;
+    &.class {
+      color: @dusty-grey;
+      &.todo {
+        color: @white-yellow
+      }
+    }
+    &.function {
+      color: @bright-green;
+      &.coffee {
+        color: @white;
+      }
+      &.js {
+        color: @white-yellow;
+      }
+    }
+  }
+  &.modifier {
+    &.js {
+      color: @white-yellow;
+    }
+  }
+}
+
+.constant {
+  color: @medium-green;
+
+  &.numeric {
+    color: @dusty-grey;
+  }
+  &.boolean {
+    color: @white;
+  }
+}
+
+.variable {
+  color: @light;
+  &.parameter {
+    color: @light;
+  }
+  &.instance {
+    color: @subtle-green;
+  }
+  &.assignment {
+    color: @dusty-grey;
+  }
+}
+
+.delimiter, .brace {
+  color: @white-yellow;
+}
+
+.delimiter.period {
+  color: @dusty-grey;
+}
+
+.invalid.deprecated {
+  text-decoration: underline;
+  color: @red;
+}
+
+.invalid.illegal {
+  color: @red;
+}
+
+.string {
+  color: @string-green;
+
+  .constant.character.escape {
+    color: @red;
+  }
+
+  &.regexp {
+    color: @cyan;
+    .source.ruby.embedded,
+    .string.regexp.arbitrary-repitition {
+      color: @red;
+    }
+  }
+}
+
+.support {
+  &.class {
+    color: @dusty-grey;
+  }
+  &.function {
+    color: @bright-green;
+  }
+
+}
+
+.operator {
+  color: @base01;
+  &.new {
+    color: @white;
+  }
+}
+
+// control structures
+.control {
+  color: @white-yellow;
+}
+
+.punctuation {
+  &.definition {
+    &.tag {
+      color: @base01;
+    }
+
+    &.entity {
+      color: @white;
+    }
+
+    &.variable.ruby {
+      color: @subtle-green;
+    }
+    &.constant {
+      color: @medium-green;
+    }
+    &.parameters {
+      color: @white;
+    }
+  }
+  &.array {
+    color: @white;
+  }
+  &.function {
+    color: @white;
+  }
+  &.section {
+    &.embedded {
+      color: @white;
+    }
+  }
+}
+
+.property-name {
+  color: @subtle-green;
+}
