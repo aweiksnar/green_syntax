@@ -1,18 +1,21 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/stylesheets/ui-variables.less
+// for a full listing of what's available.
 @import "ui-variables";
 @import "colors";
 
-.editor-colors {
+atom-text-editor {
   background-color: @brown;
   color: @dusty-grey;
-  .html {
+
+  .syntax--html {
     color: @dusty-grey;
-    &.string {
+    &.syntax--string {
       color: @white-yellow;
     }
   }
-}
 
-.editor {
   .invisible-character,
   .indent-guide {
     color: @black;
@@ -51,184 +54,199 @@
   .line-number.cursor-line-no-selection {
     background-color: @dark-grey;
   }
+
+  .bracket-matcher {
+    background-color: @orangered;
+    opacity: 0.6;
+  }
 }
 
-.bracket-matcher {
-  background-color: @orangered;
-  opacity: 0.6;
-}
 
-.comment {
+.syntax--comment {
   color: @base01;
   font-style: italic;
 }
 
-.entity {
-// classnames
+.syntax--entity {
   color: @bright-green;
 
-// function names
-  &.name.function {
+  &.syntax--name.syntax--function {
     color: @bright-green;
   }
 
-// html tag names
-  &.tag {
+  &.syntax--tag {
     color: @medium-green
   }
-// html attrs
-  &.attribute-name {
+
+  &.syntax--attribute-name {
     color: @white
   }
 
 }
 
 // stylus variable defs
-.keyword {
+.syntax--keyword {
   color: @medium-green;
-  &.operator {
+
+  &.syntax--operator {
     color: @white;
   }
 }
 
-.storage {
-  &.type {
+.syntax--storage {
+  &.syntax--type {
     color: @white;
-    &.class {
+
+    &.syntax--class {
       color: @dusty-grey;
-      &.todo {
+
+      &.syntax--todo {
         color: @white-yellow
       }
     }
-    &.function {
+
+    &.syntax--function {
       color: @bright-green;
-      &.coffee {
+
+      &.syntax--coffee {
         color: @white;
       }
-      &.js {
+
+      &.syntax--js {
         color: @white-yellow;
       }
     }
   }
-  &.modifier {
-    &.js {
+
+  &.syntax--modifier {
+    &.syntax--js {
       color: @white-yellow;
     }
   }
 }
 
-.constant {
+.syntax--constant {
   color: @medium-green;
 
-  &.numeric {
+  &.syntax--numeric {
     color: @dusty-grey;
   }
-  &.boolean {
+
+  &.syntax--boolean {
     color: @white;
   }
 }
 
-.variable {
+.syntax--variable {
   color: @light;
-  &.parameter {
+
+  &.syntax--parameter {
     color: @light;
   }
-  &.instance {
+
+  &.syntax--instance {
     color: @subtle-green;
   }
-  &.assignment {
+
+  &.syntax--assignment {
     color: @dusty-grey;
   }
 }
 
-.delimiter, .brace {
+.syntax--delimiter, .syntax--brace {
   color: @white-yellow;
 }
 
-.delimiter.period {
+.syntax--delimiter.syntax--period {
   color: @dusty-grey;
 }
 
-.invalid.deprecated {
+.syntax--invalid.syntax--deprecated {
   text-decoration: underline;
   color: @red;
 }
 
-.invalid.illegal {
+.syntax--invalid.syntax--illegal {
   color: @red;
 }
 
-.string {
+.syntax--string {
   color: @string-green;
 
-  .constant.character.escape {
+  .syntax--constant.syntax--character.syntax--escape {
     color: @red;
   }
 
-  &.regexp {
+  &.syntax--regexp {
     color: @cyan;
-    .source.ruby.embedded,
-    .string.regexp.arbitrary-repitition {
+
+    .syntax--source.syntax--ruby.syntax--embedded,
+    .syntax--string.syntax--regexp.syntax--arbitrary-repitition {
       color: @red;
     }
   }
 }
 
-.support {
-  &.class {
+.syntax--support {
+  &.syntax--class {
     color: @dusty-grey;
   }
-  &.function {
+
+  &.syntax--function {
     color: @bright-green;
   }
-
 }
 
-.operator {
+.syntax--operator {
   color: @base01;
-  &.new {
+  &.syntax--new {
     color: @white;
   }
 }
 
 // control structures
-.control {
+.syntax--control {
   color: @white-yellow;
 }
 
-.punctuation {
-  &.definition {
-    &.tag {
+.syntax--punctuation {
+  &.syntax--definition {
+    &.syntax--tag {
       color: @base01;
     }
 
-    &.entity {
+    &.syntax--entity {
       color: @white;
     }
 
-    &.variable.ruby {
+    &.syntax--variable.syntax--ruby {
       color: @subtle-green;
     }
-    &.constant {
+
+    &.syntax--constant {
       color: @medium-green;
     }
-    &.parameters {
+
+    &.syntax--parameters {
       color: @white;
     }
   }
-  &.array {
+
+  &.syntax--array {
     color: @white;
   }
-  &.function {
+
+  &.syntax--function {
     color: @white;
   }
-  &.section {
-    &.embedded {
+
+  &.syntax--section {
+    &.syntax--embedded {
       color: @white;
     }
   }
 }
 
-.property-name {
+.syntax--property-name {
   color: @subtle-green;
 }
