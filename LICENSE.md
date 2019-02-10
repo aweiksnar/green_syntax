@@ -1,4 +1,4 @@
-Copyright (c) 2014 <alex weiksnar>
+Copyright (c) 2014 <alex weiksnar> <Caleb Latimer>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

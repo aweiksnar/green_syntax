@@ -1,33 +1,107 @@
-// The ui-variables file is provided by base themes provided by Atom.
-//
+// The ui-variables & syntax-variables file is provided by base themes provided by Atom.
 // See https://github.com/atom/atom-dark-ui/blob/master/stylesheets/ui-variables.less
 // for a full listing of what's available.
 @import "ui-variables";
+@import "syntax-variables";
 @import "colors";
 
 atom-text-editor {
-  background-color: @brown;
-  color: @dusty-grey;
+  background-color: @carbon-black;
+  color: @pearl;
 
   .syntax--html {
-    color: @dusty-grey;
-    &.syntax--string {
-      color: @white-yellow;
+    color: @mink;
+    .syntax--entity{
+      color: @sage;
+    }
+    .syntax--comment{
+      color: @tea;
     }
   }
 
+  .syntax--md{
+    .syntax--punctuation{
+      color: @mint;
+    }
+    .syntax--text {
+      color: @pearl;
+    }
+    .syntax--markup{
+      color: @mint;
+    }
+  }
+
+  .syntax--js{
+    .syntax--storage.syntax--type{
+      color: @emerald;
+    }
+    .syntax--keyword{
+      color: @bright-green;
+    }
+    .syntax--keyword.syntax--operator {
+      color: @neon;
+    }
+    .syntax--property.syntax--unquoted{
+      color: @tea;
+    }
+    .syntax--class{
+      color: @subtle-green;
+    }
+    .syntax--delimiter{
+      color: @neon;
+    }
+  }
+
+  .syntax--vbs{
+    color: @pearl;
+    .syntax--storage{
+      color: @emerald;
+    }
+    .syntax--type{
+      color: @sage;
+    }
+    .syntax--keyword{
+      color: @mint;
+    }
+    .syntax--quoted{
+      color: @sage;
+    }
+    .syntax--comment{
+      color: @tea;
+    }
+    .syntax--punctuation{
+      color: @subtle-green;
+    }
+  }
+
+  .syntax--cs{
+    .syntax--comment{
+      color: @tea;
+    }
+  }
+
+  .syntax--python{
+    .syntax--other .syntax--proprty{
+      color: @lime;
+    }
+    .syntax--variable{
+      color: @emerald;
+    }
+  }
+
+
   .invisible-character,
   .indent-guide {
-    color: @black;
+    color: @dusty-grey;
   }
 
   .gutter {
-    background-color: @brown;
+    background-color: @carbon-black;
   }
 
   .gutter .line-number {
     opacity: 1;
-    color: @dark-grey;
+    color: @spring;
   }
 
   .gutter .line-number.folded,
@@ -61,9 +135,8 @@ atom-text-editor {
   }
 }
 
-
 .syntax--comment {
-  color: @base01;
+  color: @olive;
   font-style: italic;
 }
 
@@ -250,3 +323,21 @@ atom-text-editor {
 .syntax--property-name {
   color: @subtle-green;
 }
+
+// Scrollbar modifications
+::-webkit-scrollbar {
+    &-thumb {
+      background-color:@spring !important;
+    }
+    &-track {
+      background-color: @carbon-black !important;
+    }
+    &-corner{
+      background-color: @spring !important;
+       border-radius: 5px !important;
+    }
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px !important;
+  }

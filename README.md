@@ -1,11 +1,11 @@
 # green-syntax theme
 
-atom.io syntax highlighting inspired by the node js website
+Atom.io syntax highlighting inspired by the node js website
 
-## preview
+## Preview
 
-[![green-syntax](http://i.imgur.com/MAvc7NK.png)](https://atom.io/packages/green-syntax)
+[![Green-Syntax-Image](https://i.imgur.com/tGXoggN.png)](https://atom.io/packages/green-syntax)
 
-##to do:
+## To-Do
 
-Improve overall color-contrast and language support
+* Improve overall language support
