@@ -9,6 +9,15 @@ atom-text-editor {
   background-color: @carbon-black;
   color: @pearl;
 
+  .syntax--ts{
+        .syntax--variable{
+              color: @mint;
+        }
+        .syntax--type{
+              color: @cyan;
+        }
+  }
+
   .syntax--html {
     color: @mink;
     .syntax--entity{
@@ -341,3 +350,9 @@ atom-text-editor {
   ::-webkit-scrollbar-thumb {
     border-radius: 10px !important;
   }
+// Support for markdown-Preview
+.markdown-preview.markdown-preview {
+   .editor{
+     background-color: @carbon-black !important;
+   }
+ }
